@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do application</title>
+
+    <!-- style source -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- script source -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+
+        <!--Input for creation  -->
+      <form id="form">
+        <input type="text" placeholder="title" id="title" required minlength="3"/>
+        <input type="text" placeholder="description" id="description" />
+        <div>
+          <label for="priority">Priority</label>
+          <select name="priority" id="priority" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div>
+          <label for="status">Status</label>
+          <select name="isDone" id="isDone" required>
+            <option value="Done">true</option>
+            <option value="false" selected>false</option>
+          </select>
+        </div>
+        <button id="submit-btn">Submit</button>
+      </form>
+
+      
+      <br><br>
+
+
+      <!-- Area to display json data -->
+      <div id="display">
+
+      </div>
+
+      
+      <br><br>
+
+      <!-- search area -->
+      <div>
+        <label for="search">Search</label>
+        <input type="search" id="search">
+      </div>
+
+
+      <br><br>
+
+      <!-- filter area -->
+      <div id="filtered"></div>
+
+    </main>
+  </body>
+</html>
