@@ -1,0 +1,45 @@
+{
+  "employees": [
+    {
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "dept": "Human Resources",
+      "joinDate": "2025-07-01",
+      "salary": "55000",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Bob Johnson",
+      "email": "bob@example.com",
+      "departmentId": "2",
+      "joiningDate": "2025-07-01",
+      "salary": "55000"
+    },
+    {
+      "name": "Charlie Johnson",
+      "email": "charlie@example.com",
+      "dept": "Human Resources",
+      "joinDate": "2025-07-01",
+      "salary": "55000",
+      "id": "3"
+    }
+  ],
+  "departments": [
+    {
+      "id": "1",
+      "name": "Human Resources",
+      "code": "HR"
+    },
+    {
+      "id": "2",
+      "name": "Engineering",
+      "code": "ENG"
+    },
+    {
+      "id": "3334",
+      "name": "IT FIELD",
+      "code": "IT-01"
+    }
+  ]
+}

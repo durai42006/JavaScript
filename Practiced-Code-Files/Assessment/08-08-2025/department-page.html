@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      defer
+    ></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-danger">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" href="dashboard.html" aria-current="page"
+                >Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="employee-page.html">Employee Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-tabs bg-info" href="department-page.html">Department Page</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+     <main  class="text-center">
+        <h1>Employee Directory</h1>
+        <button type="button" id="ad-emp">Add Department</button>
+
+        <div class="m-5" id="table-employee">
+            <table id="emp-table">
+                <thead>
+                    <tr>
+                        <!-- <th>No</th> -->
+                         <th>id</th>
+                         <th>name</th>
+                         <th>Code</th>
+                         <th>Edit</th>
+                         <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="t-body">
+                    <tr>
+                        <td colspan="5">
+                            <div class="toast" id="toast-content">
+                        <div class="toast-header">
+                            <h1>No data</h1>
+                        </div> 
+                        <div class="toast-body">
+                            <p>No Department found</p>
+                        </div> 
+                    </div>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+    <form class="form w-50 m-auto p-3 rounded" style="background-color: antiquewhite;" id="emp-form">
+        <!-- Name -->
+        <div class="form-floating mb-3" id="div-name">
+            <input
+                type="text"
+                class="form-control"
+                name="EmployeeName"
+                id="dept-name"
+                placeholder=""
+            />
+            <label for="emp-name">Department name</label>
+        </div>
+        <div class="invalid-feedback">
+            <p>Required minimum 3 character</p>
+        </div>
+
+        <div class="form-floating mb-3" id="div-code">
+            <input
+                type="text"
+                class="form-control"
+                name="EmployeeName"
+                id="dept-code"
+                placeholder=""
+            />
+            <label for="emp-name">Department Code</label>
+        </div>
+        <div class="invalid-feedback">
+            <p>Required minimum 2 character</p>
+        </div>
+
+        
+        
+        <!-- Button for Submission -->
+         <div class="text-center">
+            <button type="button" class="btn btn-danger" style="width: 30%;" id="dept-submit">Submit</button>
+         </div>
+
+         <div class="text-center">
+            <button type="button" class="btn btn-danger" style="width: 30%;" id="dept-update">Update</button>
+         </div>
+         
+    </form>
+
+    <script src="department.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

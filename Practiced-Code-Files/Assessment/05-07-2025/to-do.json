@@ -1,0 +1,58 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Learn JavaScript",
+      "description": "Complete ES6 exercises",
+      "priority": 3,
+      "createdDate": "2025-08-01T10:00:00.000Z",
+      "isDone": false,
+      "updatedDate": null
+    },
+    {
+      "id": "2",
+      "title": "Build Portfolio",
+      "description": "Add projects and host on GitHub Pages",
+      "priority": 4,
+      "createdDate": "2025-08-02T09:30:00.000Z",
+      "isDone": true,
+      "updatedDate": null
+    },
+    {
+      "id": "3",
+      "title": "Learn Js",
+      "description": "ALso learn html,css",
+      "priority": "1",
+      "createdDate": "Tue, 05 Aug 2025 10:46:38 GMT",
+      "isDone": "Done",
+      "updatedDate": "Done"
+    },
+    {
+      "id": "4",
+      "title": "Learn c#",
+      "description": "Also learn SQL server",
+      "priority": "1",
+      "createdDate": "Tue, 05 Aug 2025 10:48:19 GMT",
+      "isDone": "Done",
+      "updatedDate": "Done"
+    },
+    {
+      "id": "5",
+      "title": "",
+      "description": "",
+      "priority": "1",
+      "createdDate": "Tue, 05 Aug 2025 11:20:15 GMT",
+      "isDone": "false",
+      "updatedDate": "false"
+    },
+    {
+      "id": "6",
+      "title": "Learn c#",
+      "description": "Also learn SQL server and HTML CSS",
+      "priority": "1",
+      "createdDate": "Tue, 05 Aug 2025 11:48:40 GMT",
+      "isDone": "false",
+      "updatedDate": "false"
+    }
+  ]
+}
